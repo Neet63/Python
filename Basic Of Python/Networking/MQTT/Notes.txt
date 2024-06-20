@@ -1,0 +1,19 @@
+MQTT -> Message Queuing Telemetry Transport
+It is a lightweight, publish-subscribe network protocol that transports messages between devices.
+It is designed for connections with remote locations where a small code footprint is required or the network bandwidth is limited. MQTT is widely used in IoT (Internet of Things) applications due to its efficiency and simplicity.
+    
+
+Key Concept of MQTT
+1. Broker: A server that handles the distribution of messages to clients.
+2. Client: Any device (e.g., sensors, applications) that connects to the broker to send or receive messages.
+3. Topic: A UTF-8 string that the broker uses to filter messages for each connected client.
+4. Publish: The act of sending a message to the broker on a specific topic.
+5. Subscribe: The act of subscribing to a topic to receive messages published on that topic.
+6. QoS (Quality of Service): Defines the guarantee of delivery for a specific message (0, 1, or 2).
+    Quality of Service (QoS):
+    ->  QoS 0: At most once – The message is delivered at most once, and delivery is not acknowledged.
+    ->  QoS 1: At least once – The message is delivered at least once, and delivery is acknowledged.
+    ->  QoS 2: Exactly once – The message is delivered exactly once by using a four-step handshake process.
+
+
+To implement MQTT in Python, you can use the paho-mqtt library, which is the most commonly used library for MQTT in Python.

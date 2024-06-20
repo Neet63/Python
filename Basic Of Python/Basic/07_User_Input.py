@@ -1,0 +1,10 @@
+a = int(input("Enter a number : "))
+b = float(input('Enter FLoat Value : '))
+c = input("Entr anything : ")
+d = complex(input("Enter complex number : "))
+
+print(a , type(a))
+print(b , type(b))
+print(c , type(c))
+print(d.real , type(d))
+print(d.imag , type(d))

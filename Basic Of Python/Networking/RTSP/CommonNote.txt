@@ -1,0 +1,50 @@
+RTSP, RTP, and RTCP are designed to work together in streaming media applications, each serving a different but complementary role. Here's how they interact:
+
+### RTSP (Real-Time Streaming Protocol)
+
+- Purpose: RTSP is used to control streaming media servers. It provides commands to manage the delivery of media streams (e.g., play, pause, stop).
+- Functionality: RTSP handles session management and control. It establishes and controls media sessions between clients and servers.
+- Commands: Common RTSP commands include DESCRIBE, SETUP, PLAY, PAUSE, and TEARDOWN.
+- Transport: RTSP typically uses TCP to ensure reliable communication of control messages.
+
+
+### RTP (Real-Time Transport Protocol)
+
+- Purpose: RTP is used for the actual delivery of media data (e.g., audio, video) over the network.
+- Functionality: RTP is responsible for the real-time transmission of media. It carries the media streams established by RTSP.
+- Packet Structure: RTP packets include sequence numbers and timestamps to manage the order and timing of media playback.
+- Transport: RTP typically uses UDP to minimize latency and support real-time requirements.
+
+### RTCP (Real-Time Control Protocol)
+
+- Purpose: RTCP works alongside RTP to provide control and monitoring of data delivery.
+- Functionality: RTCP provides feedback on the quality of the media transmission, such as packet loss, jitter, and latency. It helps in managing and optimizing the streaming session.
+- Reports: RTCP sends sender reports (SR) and receiver reports (RR) to communicate statistics about the media stream.
+- Synchronization: RTCP assists in synchronizing multiple media streams (e.g., audio and video) by providing timing information.
+- Bandwidth: RTCP is designed to use minimal bandwidth, typically around 5% of the total session bandwidth.
+
+### How They Work Together
+
+1. Session Setup:
+   - The client sends an RTSP DESCRIBE request to the server to get information about the media stream.
+   - The client then sends an RTSP SETUP request to establish an RTP session for each media stream (audio, video).
+
+2. Media Delivery:
+   - Once the session is set up, the client sends an RTSP PLAY command to start the media stream.
+   - The server starts sending the media data using RTP packets.
+
+3. Quality Monitoring:
+   - While RTP is delivering the media data, RTCP is used to monitor the quality of the transmission.
+   - RTCP packets are periodically sent to provide feedback on performance metrics like packet loss and jitter.
+
+4. Session Control:
+   - The client can control the media playback using additional RTSP commands (e.g., PAUSE, TEARDOWN).
+   - RTSP commands can be sent at any time to control the ongoing RTP media streams.
+
+### Summary
+
+- RTSP manages the setup, control, and teardown of media sessions.
+- RTP handles the actual transmission of media data.
+- RTCP monitors and controls the quality of the RTP transmission.
+
+Together, these protocols provide a comprehensive framework for real-time streaming and communication, ensuring efficient delivery, control, and quality monitoring of media streams.

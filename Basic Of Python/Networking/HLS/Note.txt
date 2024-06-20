@@ -1,0 +1,10 @@
+HLS stands for HTTP Live Streaming, a media streaming protocol developed by Apple.
+
+It is widely used for delivering audio and video content over the internet. 
+
+HLS works by breaking the overall stream into a sequence of small HTTP-based file downloads, allowing the content to be dynamically adapted to the user's network conditions.This ensures smooth playback even under varying network speeds.
+
+Key Features of HLS:
+ ->  Segmented Streaming: The media content is divided into smaller chunks      (usually around 10 seconds long) which are downloaded sequentially.
+ ->  Adaptive Bitrate Streaming: It automatically adjusts the quality of the video stream in real-time based on the viewer's network conditions, providing the best possible viewing experience.
+ ->  Compatibility: HLS is supported on a wide range of devices and platforms, including iOS, Android, macOS, Windows, and many web browsers.

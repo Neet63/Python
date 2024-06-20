@@ -1,0 +1,14 @@
+RTMP stands for Real-Time Messaging Protocol. 
+It is a proprietary protocol developed by Macromedia (now owned by Adobe) for streaming audio, video, and data over the internet. 
+
+Here’s a brief overview:
+
+-> Low Latency: RTMP is designed for low-latency streaming, making it suitable for live broadcasts and real-time applications.
+
+-> Persistent Connection: It uses a persistent TCP connection, which ensures reliable delivery of streams.
+
+-> Chunked Data: RTMP divides the data into smaller chunks for transmission, which allows for efficient and continuous streaming.
+
+-> Flexibility: Supports a variety of codecs and is flexible enough to handle different types of data, including audio, video, and text.
+
+-> Adaptive Streaming: Can dynamically adjust the quality of the stream based on the available bandwidth, providing a smoother user experience.

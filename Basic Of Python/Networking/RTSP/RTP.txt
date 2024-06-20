@@ -1,0 +1,17 @@
+RTP stands for Real-time Transport Protocol. 
+It is a network protocol designed for delivering audio and video over IP networks.
+RTP is widely used in communication and entertainment systems that involve streaming media, such as video conferencing, VoIP (Voice over IP), and live television broadcasts.
+
+Feature of RTP
+
+-> Transport of real-time data such as audio and video
+-> Handles the actual transmission of media data
+-> Transport protocol
+-> No Session Control, focuses on the delivery of media streams
+-> Typically runs over UDP
+-> No commands; data transport only
+-> Binary protocol with headers for synchronization and ordering
+-> Relies on RTCP for error and control feedback
+-> Typically uses dynamic ports, often starting from 5004 for RTP streams
+-> Often used with RTCP for monitoring and feedback
+
