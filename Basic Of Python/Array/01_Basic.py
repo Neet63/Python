@@ -1,6 +1,6 @@
 # # Create Array
 # import array
-# obj = array.array(typecode[, initializer])
+# obj = array.array(typecode,[, initializer])
 #   typecode −> The typecode character used to create the array.
 #   initializer −> array initialized from the optional value, which must be a list, a bytes-like object, or iterable over elements of the appropriate type.
 
